@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+    --main-bg-color: #FFFFFF;
+    --main-color: #212121;
+    --main-heading-color: #FFFFFF;
+    --webstudio-color:#2196F3;
+    --request-studio-color:#FFFFFF;
+    --contact-info-header: #757575;
+    --heading-bg-color: #2F303A;
+    --section-titles-color: #212121;
+    --request-our-service-hover-color:#0a7ddb;
+    --our-team-bg-color: #F5F4FA;
+    --description-color:#757575;
+    --footer-bg-color: #2F303A;
+    --contact-info-footer:rgba(255, 255, 255, 0.6);
+    --address-footer-color: #FFFFFF;
+    --button-bg-color:#F5F4FA; 
+    --active-and-hover-color: #2196F3;
+    --white-text-color: #FFFFFF;
+
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: 'Roboto',sans-serif;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+ul{
+    list-style-type: none;
+}
+
+/* MARK - header styling */
+
+.webtudio-link{
+    color: var(--webstudio-color);
+    text-decoration: none;
+    font-family: 'Raleway',sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.menu-item{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.menu-item:hover,
+.menu-item:focus,
+.nav-link-current{
+    color: var(--active-and-hover-color);
+   
+}
+
+
+.contact-detail{
+    text-decoration: none;
+    color: var(--contact-info-header);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contact-detail:hover,
+.contact-detail:focus{
+    color: var(--active-and-hover-color);
+}
+
+/* MARK - main styling */
+.title-div{
+    background-color: var(--heading-bg-color);
+}
+.effective-solution-title {
+    /* color: var(--main-heading-color) */
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-heading-color);
+}
+
+.request-our-service-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--webstudio-color);
+    color: var(--request-studio-color);
+}
+
+.request-our-service-button:hover,
+.request-our-service-button:focus{
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--request-our-service-hover-color);
+}
+
+.skills-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.skills-description {
+    
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+}
+
+.what-we-do-title,
+.our-team,
+.portfolio-projects-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+.our-team-section{
+    background-color: var(--our-team-bg-color);
+}
+
+
+.team-member-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+.profession{
+   
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--description-color)
+}
+
+
+/* MARK - footer styling */
+.footer{
+    background-color: var(--footer-bg-color);
+}
+
+
+.address{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--address-footer-color);
+    font-style: normal;
+}
+
+.contact-detail-footer{
+    text-decoration: none;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--contact-info-footer);
+
+}
+.contact-detail-footer:hover,
+.contact-detail-footer:active,
+.contact-detail-footer:focus{
+    color: var(--active-and-hover-color);
+}
+
+
+/* MARK -> PORTFOLIO PAGE */
+
+
+
+.button-item{
+    background-color: var(--button-bg-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.button-item:hover,
+.button-item:focus{
+    background-color: var(--active-and-hover-color);
+    color: var(--white-text-color);
+    cursor: pointer;
+}
+
+.project-example{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-title {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+}
