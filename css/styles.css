@@ -28,21 +28,58 @@ body{
     font-size: 14px;
     font-weight: 400;
 }
+h1, h2, h3, h4, h5,h6, p{
+    margin: 0;
+}
 ul{
     list-style-type: none;
 }
 
 /* MARK - header styling */
-
-.webtudio-link{
+header{
+    display: flex;
+    justify-content: center;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+   
+}
+.header-container{
+    display: flex;
+    width: 1200px;
+    border-bottom: #ECECEC;
+    
+}
+.webstudio-link{
     color: var(--webstudio-color);
     text-decoration: none;
     font-family: 'Raleway',sans-serif;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding-top:24px;
+    padding-bottom:25px;
+    margin-right:97px;
+    align-self: center;
+   
+    
 }
-
+.menu{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    padding-left: 0px;
+   
+}
 .menu-item{
     cursor: pointer;
     text-decoration: none;
@@ -51,6 +88,7 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+   
 }
 .menu-item:hover,
 .menu-item:focus,
@@ -58,7 +96,22 @@ ul{
     color: var(--active-and-hover-color);
    
 }
+.studio{
+    margin-right: 53px;
 
+}
+.portfolio{
+    margin-right: 69px;
+}
+.contacts{
+    margin-right:340px;
+}
+.contact-info{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 0px;
+}
 
 .contact-detail{
     text-decoration: none;
@@ -71,10 +124,30 @@ ul{
 .contact-detail:focus{
     color: var(--active-and-hover-color);
 }
+.email{
+    margin-right: 50px;
+}
 
 /* MARK - main styling */
+/* MARK - OUR Skills */
+
+.our-skills-section{
+    display: flex;
+    justify-content: center;
+}
+.section{
+    /* padding-top: 94px; */
+    padding-bottom: 94px;
+}
+.section-black-color{
+    width: 100%;
+    /* background-color: var(--main-color); */
+}
+
 .title-div{
     background-color: var(--heading-bg-color);
+    
+   
 }
 .effective-solution-title {
     /* color: var(--main-heading-color) */
@@ -85,6 +158,8 @@ ul{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-heading-color);
+    padding-top: 200px;
+    padding-bottom: 30px;
 }
 
 .request-our-service-button {
@@ -96,24 +171,43 @@ ul{
     letter-spacing: 0.06em;
     background-color: var(--webstudio-color);
     color: var(--request-studio-color);
+    border-radius: 4px;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 50px;
+    
+    
 }
-
+.request-service-container{
+    /* padding-left:700px; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
 .request-our-service-button:hover,
 .request-our-service-button:focus{
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--request-our-service-hover-color);
 }
-
+/* MARK - SECTION 2 */
+.our-skills-container{
+    display: flex;
+    padding-left: 0px;
+}
+.heading-our-skills{
+    padding-bottom: 50px;;
+}
 .skills-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 9.41px;
 
 }
-
 .skills-description {
     
     font-size: 14px;
@@ -121,10 +215,15 @@ ul{
     letter-spacing: 0.03em;
     color: var(--description-color);
 }
-
+.our-skills-container > li{
+    margin-right: 30px;
+    width:270px;
+    
+}
 .what-we-do-title,
 .our-team,
-.portfolio-projects-title{
+.portfolio-projects-title,
+.heading-our-skills{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -132,32 +231,75 @@ ul{
     letter-spacing: 0.03em;
 }
 
+/* MARK WHat we do section */
+
+.what-we-do-section{
+    display: flex;
+    justify-content: center;
+}
+.what-we-do-title{
+    padding-bottom: 50px;
+}
+.what-we-do-images{
+    display: flex;
+    padding-left: 0px;
+    margin-left: 0px;
+
+}
+.coding-image,
+.phone-testing-image,
+.color-palate-image{
+    margin-right: 30px;
+}
+
+
+/* MARK - Our tem section */
 
 .our-team-section{
     background-color: var(--our-team-bg-color);
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin-left: 0px;
 }
-
+.our-team{
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 
 .team-member-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+   
 }
 .profession{
-   
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
-    color: var(--description-color)
+    text-align: center;
+    color: var(--description-color);
+    padding-bottom: 30px; 
 }
-
-
+.our-team-list{
+    display: flex;
+    justify-content: center;
+    padding-left:0px;
+}
+.our-team-list > li{
+    margin-right:30px;
+    background-color: var(--main-bg-color);
+}
 /* MARK - footer styling */
 .footer{
     background-color: var(--footer-bg-color);
+   display: flex;
+   justify-content: center;
 }
-
 
 .address{
     text-decoration: none;
@@ -167,7 +309,16 @@ ul{
     color: var(--address-footer-color);
     font-style: normal;
 }
-
+.address-footer{
+    padding-left: 0px;
+}
+.footer-container{
+   padding-top: 60px;
+   padding-bottom: 60px;   
+}
+.webstudio-link-footer{
+    padding-bottom: 9px;
+}
 .contact-detail-footer{
     text-decoration: none;
     font-weight: 500;
@@ -177,6 +328,7 @@ ul{
     color: var(--contact-info-footer);
 
 }
+
 .contact-detail-footer:hover,
 .contact-detail-footer:active,
 .contact-detail-footer:focus{
@@ -185,8 +337,21 @@ ul{
 
 
 /* MARK -> PORTFOLIO PAGE */
+.main-portfolio-section{
+    display: flex;
+    justify-content: center;
+}
+.main-section{
+    padding-top: 94px;
+    
+}
+.button-choices{
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-bottom: 50px;
 
-
+}
 
 .button-item{
     background-color: var(--button-bg-color);
@@ -196,6 +361,9 @@ ul{
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: 0px;
+    margin-right: 8px;
 }
 .button-item:hover,
 .button-item:focus{
@@ -204,15 +372,64 @@ ul{
     cursor: pointer;
 }
 
+.all{
+    padding:6px 27px 6px 27px;
+}
+.web-site{
+    padding:6px 26px
+}
+.apps{
+    padding: 6px 53px;
+}
+.design{
+    padding: 6px 26px 6px 25px;
+}
+.marketing{
+    padding: 6px 26px 6px 27px;
+}
+.portfolio-projects-title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+.grey-border-box{
+    border: 1px solid #EEEEEE;
+    margin: 0px;
+}
+.projects > li{
+    
+    margin-bottom: 30px;
+}
+.projects>li:first-child,
+.projects>li:nth-child(2),
+.projects>li:nth-child(4),
+.projects>li:nth-child(5),
+.projects>li:nth-child(7),
+.projects>li:nth-child(8){
+    margin-right:30px;
+   
+}
+.projects > li:nth-child(n+7){
+    margin-bottom: 0px;
+
+}
 .project-example{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding-left: 24px;
+    margin-bottom: 4px;;
 }
 .project-title {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--description-color);
+    padding-left: 24px;
+    padding-bottom: 20px;
 }

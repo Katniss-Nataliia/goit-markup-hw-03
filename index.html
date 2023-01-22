@@ -4,38 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
   </head>
   <body>
     <header>
-      <a href="index.html" class="webtudio-link">WebStudio</a>
+        <div class="header-container container">
+      <a href="index.html" class="webstudio-link">WebStudio</a>
       <nav>
         <!-- Navigation to other pages -->
+       
         <ul class="menu">
-          <li><a href="index.html" class="menu-item nav-link-current">Studio</a></li>
-          <li><a href="portfolio.html" rel="noopener norefer" class="menu-item">Portfolio</a></li>
-          <li><a href="index.html" class="menu-item">Contacts</a></li>
+          <li><a href="index.html" class="menu-item nav-link-current studio">Studio</a></li>
+          <li><a href="portfolio.html" rel="noopener norefer" class="menu-item portfolio">Portfolio</a></li>
+          <li><a href="index.html" class="menu-item contacts">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="contact-info">
+        <ul class="contact-info">
         <li><a href="mailto:info@devstudio.com" class="contact-detail email">info@devstudio.com</a></li>
         <li><a href="tel:+12127724150" class="contact-detail phone-number">+12127724150</a></li>
       </ul>
+      </div>
     </header>
+ 
     <main>
-      <section>
+        <section class="section-black-color section">
+      <div class="container section-black-color">
         <div class="title-div">
           <h1 class="effective-solution-title">
             EFFECTIVE SOLUTIONS FOR <br />
             YOUR BUSINESS
           </h1>
-          <button type="button" class="request-our-service-button">Request Our Service</button>
+          <div class="request-service-container"><button type="button" class="request-our-service-button">Request Our Service</button> </div>
         </div>
+    </div>
       </section>
       <section class="our-skills-section">
-        <h2>Our Skills</h2>
-        <ul>
+      <div class="container section">
+        <h2 class="heading-our-skills">Our Skills</h2>
+        <ul class="our-skills-container">
           <li>
             <h3 class="skills-title">ATTENTION TO DETAILS</h3>
             <p class="skills-description">
@@ -65,24 +73,30 @@
             </p>
           </li>
         </ul>
+    </div>
       </section>
 
-      <section>
+      <section class="what-we-do-section">
+      <div class="container section">
         <h2 class="what-we-do-title">What We Do</h2>
         <ul class="what-we-do-images">
-          <li><img src="images/img.jpg" alt="coding" width="370" /></li>
-          <li><img src="images/box2.jpg" alt="phone testing" width="370" /></li>
-          <li><img src="images/box3.jpg" alt="color palete" width="370" /></li>
+          <li><img src="images/img.jpg" alt="coding" width="370" class="coding-image" /></li>
+          <li><img src="images/box2.jpg" alt="phone testing" width="370" class="phone-testing-image"/></li>
+          <li><img src="images/box3.jpg" alt="color palete" width="370" class="color-palate-image"/></li>
         </ul>
+        </div>
       </section>
 
+
+
       <section class="our-team-section">
+      <div class="container section">
         <h2 class="our-team">Our Team</h2>
         <ul class="our-team-list">
           <li>
             <img
               src="images/productDesigner.jpg" alt="product designer" width="270"/>
-            <h3 class="team-member-name">Christopher Walker</h3>
+           <h3 class="team-member-name">Christopher Walker</h3>
             <p class="profession">Ploduct Designer</p>
           </li>
           <li>
@@ -102,19 +116,23 @@
             <p class="profession">UI Designer</p>
           </li>
         </ul>
+
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a href="index.html" class="webtudio-link">WebStudio</a>
+      <div class="footer-container container">
+      <a href="index.html" class="webstudio-link webstudio-link-footer">WebStudio</a>
       <address>      
       <ul class="address-footer">
-        <li><a href="https://goo.gl/maps/vmdEabcFhvJnFiz56" class="address">695 Park Ave, New York, NY 10065, United States</a></li>
-        <li><a href="mailto:info@devstudio.com" class="contact-detail-footer">info@devstudio.com</a></li>
-        <li><a href="tel:+12127724150" class="contact-detail-footer">+12127724150</a></li>
+        <li><a href="https://goo.gl/maps/vmdEabcFhvJnFiz56" class="address">695 Park Ave, New York, NY 10065, <br> United States</a></li>
+        <li><a href="mailto:info@devstudio.com" class="contact-detail-footer email-footer">info@devstudio.com</a></li>
+        <li><a href="tel:+12127724150" class="contact-detail-footer phone-footer ">+12127724150</a></li>
         
       </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
