@@ -168,6 +168,13 @@ header{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--request-our-service-hover-color);
 }
+.button-parent-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* MARK - SECTION 2 Our skills*/
 
 .section{
